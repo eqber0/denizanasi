@@ -6,14 +6,14 @@ media_folder: "public/images"
 public_folder: "images"
 collections:
   - name: "blog"
-    label: "Blog"
-    folder: "src/blog"
-    create: {{true}},
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "ImageAlt", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  label: "Blog"
+  folder: "src/blog"
+  create: {{true}},
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Description", name: "description", widget: "string" }
+    - { label: "Date", name: "date", widget: "datetime" }
+    - { label: "Image", name: "image", widget: "image" }
+    - { label: "ImageAlt", name: "imageAlt", widget: "string" }
+    - { label: "Body", name: "body", widget: "markdown" }
