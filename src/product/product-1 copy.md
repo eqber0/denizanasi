@@ -1,5 +1,5 @@
 ---
-title: Ürün 2
+name: Ürün 2
 rating: 5
 price: 280₺
 tag: En çok satılan
