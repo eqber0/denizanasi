@@ -183,6 +183,22 @@
       type="text/css"
       media="all"
     />
+        <script
+      defer
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+ <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     <script
       type="text/javascript"
       src="../../wp-includes/js/jquery/jquery.min.js"

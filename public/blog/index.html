@@ -183,6 +183,22 @@
       type="text/css"
       media="all"
     />
+        <script
+      defer
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+ <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     <script
       type="text/javascript"
       src="../wp-includes/js/jquery/jquery.min.js"
@@ -449,6 +465,51 @@
                   class="site-content blog-content-card"
                   role="main"
                 ><article
+  id="post-3976"
+  class="card-post col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 post-3976 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories category-collection category-health-beauty tag-beauty tag-ear-care tag-electric tag-fashion tag-jwerly tag-mimimal"
+>
+  <div class="entry-post">
+    <div class="entry-thumb single-thumb">
+      <a
+        class="post-thumbnail"
+        href="/blog/2023-07-11-yeni-blog-yazım/"
+        title=""
+      >
+        <img
+          width="900"
+          height="870"
+          src="/images/bilgehan-concept-photo.jpg"
+          class="attachment-beaufly-blog-layout-1 size-beaufly-blog-layout-1 wp-post-image"
+          alt="bilgehan-yilmaz"
+          decoding="async"
+          loading="lazy"
+        />
+      </a>
+    </div>
+    <div class="post-content">
+      <div class="info">
+        <div class="entry-date">
+          <a href="/blog/2023-07-11-yeni-blog-yazım/" rel="bookmark">
+            <time
+              class="published"
+            >
+            Jul 11, 2023
+            </time>
+            <time
+              class="updated"
+            >
+            Jul 11, 2023
+            </time>
+          </a>
+        </div>
+        <h3 class="entry-title">
+          <a href="/blog/2023-07-11-yeni-blog-yazım/"> Yeni Blog Yazım </a>
+        </h3>
+        <a class="read-more" href="/blog/2023-07-11-yeni-blog-yazım/">Devamını Oku</a>
+      </div>
+    </div>
+  </div>
+</article><article
   id="post-3976"
   class="card-post col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 post-3976 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories category-collection category-health-beauty tag-beauty tag-ear-care tag-electric tag-fashion tag-jwerly tag-mimimal"
 >

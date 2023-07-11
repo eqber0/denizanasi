@@ -1039,6 +1039,7 @@
                                                   data-columns1440="4"
                                                   data-columns="4"
                                                 >
+                                                {%- for product in collections.product-%}
                                                   <div class="item-product">
                                                     <div class="items">
                                                       <div
@@ -1046,6 +1047,7 @@
                                                       >
                                                         <div
                                                           class="products-thumb"
+                                                          style="width: 100%"
                                                         >
                                                           <div
                                                             class="product-lable"
@@ -1053,21 +1055,22 @@
                                                             <div
                                                               class="vgwc-label vgwc-featured hot"
                                                             >
-                                                              En Çok Satılan
+                                                              {{product.data.tag}}
                                                             </div>
                                                           </div>
                                                           <div
                                                             class="product-thumb-hover"
                                                           >
                                                             <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
+                                                              target="_blank"
+                                                              href="{{product.data.link}}"
                                                               class="woocommerce-LoopProduct-link"
                                                               data-fancybox="products"
                                                             >
                                                               <img
                                                                 width="600"
                                                                 height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
+                                                                src="{{product.data.image}}"
                                                                 class="fade-in lazyload wp-post-image"
                                                                 alt=""
                                                                 decoding="async"
@@ -1076,7 +1079,7 @@
                                                               <img
                                                                 width="600"
                                                                 height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
+                                                                src="{{product.data.secondImage}}"
                                                                 class="hover-image back"
                                                                 alt=""
                                                                 decoding="async"
@@ -1092,9 +1095,8 @@
                                                             <h3
                                                               class="product-title"
                                                             >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
+                                                              <a target="_blank" href="{{product.data.link}}">
+                                                                {{product.data.title}}
                                                               </a>
                                                             </h3>
                                                             <div class="rating">
@@ -1105,15 +1107,9 @@
                                                               >
                                                                 <span
                                                                   style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
+                                                                    width: {{product.data.rating * 20}}%;
+                                                                  ">
+                                                                  </span>
                                                               </div>
                                                             </div>
                                                             <span class="price">
@@ -1121,11 +1117,11 @@
                                                                 class="woocommerce-Price-amount amount"
                                                               >
                                                                 <bdi>
-                                                                  269,00
+                                                                  {{product.data.price}}
                                                                   <span
                                                                     class="woocommerce-Price-currencySymbol"
                                                                   >
-                                                                    ₺
+                                                                    
                                                                   </span>
                                                                 </bdi>
                                                               </span>
@@ -1135,678 +1131,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="item-product">
-                                                    <div class="items">
-                                                      <div
-                                                        class="products-entry content-product1 clearfix product-wapper"
-                                                      >
-                                                        <div
-                                                          class="products-thumb"
-                                                        >
-                                                          <div
-                                                            class="product-lable"
-                                                          >
-                                                            <div
-                                                              class="vgwc-label vgwc-featured hot"
-                                                            >
-                                                              En Çok Satılan
-                                                            </div>
-                                                          </div>
-                                                          <div
-                                                            class="product-thumb-hover"
-                                                          >
-                                                            <a
-                                                              href="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                              class="woocommerce-LoopProduct-link"
-                                                              data-fancybox="products"
-                                                            >
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-35-600x750.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                              <img
-                                                                width="600"
-                                                                height="750"
-                                                                src="/wp-content/uploads/2018/05/Rectangle-36-600x750.jpg"
-                                                                class="hover-image back"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                        <div
-                                                          class="products-content"
-                                                        >
-                                                          <div class="contents">
-                                                            <h3
-                                                              class="product-title"
-                                                            >
-                                                              <a href="#0">
-                                                                Homm Bitkisel
-                                                                Parfüm
-                                                              </a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                              <div
-                                                                class="star-rating"
-                                                                role="img"
-                                                                aria-label="Rated 3.50 out of 5"
-                                                              >
-                                                                <span
-                                                                  style="
-                                                                    width: 70%;
-                                                                  "
-                                                                  >Rated
-                                                                  <strong
-                                                                    class="rating"
-                                                                    >3.50</strong
-                                                                  >
-                                                                  out of 5</span
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                            <span class="price">
-                                                              <span
-                                                                class="woocommerce-Price-amount amount"
-                                                              >
-                                                                <bdi>
-                                                                  269,00
-                                                                  <span
-                                                                    class="woocommerce-Price-currencySymbol"
-                                                                  >
-                                                                    ₺
-                                                                  </span>
-                                                                </bdi>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                                  {%- endfor-%}
                                                 </div>
                                               </div>
                                             </div>
