@@ -235,26 +235,26 @@
       type="text/javascript"
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
- <script>
+    <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+              document.location.href = "/admin/"
+            })
           }
-        });
+        })
       }
     </script>
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+              document.location.href = "/admin/"
+            })
           }
-        });
+        })
       }
     </script>
     <script
@@ -279,7 +279,7 @@
               <div class="header-center__inner header-flex">
                 <div class="header-left">
                   <div class="wpbingoLogo">
-                    <a href="./index.html">
+                    <a href="/index">
                       <img
                         src="./images/denizanasi-logo.svg"
                         alt="Deniz Anası Logo"
@@ -310,7 +310,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./index.html">
+                                        <a href="/index">
                                           <span class="menu-item-text">
                                             Anasayfa
                                           </span>
@@ -319,7 +319,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./about.html">
+                                        <a href="/about">
                                           <span class="menu-item-text">
                                             Hakkımda
                                           </span>
@@ -328,7 +328,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./blog.html">
+                                        <a href="/blog">
                                           <span class="menu-item-text">
                                             Blog
                                           </span>
@@ -337,7 +337,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor"
                                       >
-                                        <a href="./contact.html">
+                                        <a href="/contact">
                                           <span class="menu-item-text">
                                             İletişim
                                           </span>
@@ -369,7 +369,11 @@
                       <a href="home-2.html#"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="home-2.html#"><i class="fa fa-instagram"></i></a>
+                      <a
+                        href="https://www.instagram.com/denizanasitr"
+                        target="_blank"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
                     </li>
                     <li>
                       <a href="home-2.html#"><i class="fa fa-facebook"></i></a>
@@ -381,7 +385,11 @@
                 </div>
                 <div class="topbar-right">
                   <div class="contact hidden-xs">
-                    <a href="#0">Referansımla Kayıt Ol</a>
+                    <a
+                      target="_blank"
+                      href="www.hommbitkisel.com.tr/yeni-kayit/elif-ceyda-rodoplu-HOMM312543184"
+                      >Referansımla Kayıt Ol</a
+                    >
                   </div>
                   <div class="customer">
                     <a href="#0">Referansımla Ürün Al</a>
@@ -407,7 +415,7 @@
               </div>
               <div class="header-center">
                 <div class="wpbingoLogo">
-                  <a href="./index.html">
+                  <a href="/index">
                     <img
                       src="./images/denizanasi-logo.svg"
                       alt="Deniz Anası Logo"
@@ -426,7 +434,7 @@
               >
                 <div class="header-center text-center">
                   <div class="wpbingoLogo">
-                    <a href="./index.html">
+                    <a href="/index">
                       <img
                         src="./images/denizanasi-logo.svg"
                         alt="Deniz Anası Logo"
@@ -460,7 +468,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./index.html">
+                                        <a href="/index">
                                           <span class="menu-item-text">
                                             Anasayfa
                                           </span>
@@ -469,7 +477,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./about.html">
+                                        <a href="/about">
                                           <span class="menu-item-text">
                                             Hakkımda
                                           </span>
@@ -478,7 +486,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu"
                                       >
-                                        <a href="./blog.html">
+                                        <a href="/blog">
                                           <span class="menu-item-text">
                                             Blog
                                           </span>
@@ -487,7 +495,7 @@
                                       <li
                                         class="level-0 menu-item-41528 menu-item menu-item-type-post_type menu-item-object-page menu-item-home std-menu current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor"
                                       >
-                                        <a href="./contact.html">
+                                        <a href="/contact">
                                           <span class="menu-item-text">
                                             İletişim
                                           </span>
@@ -523,7 +531,7 @@
           <div class="container">
             <div id="breadcrumb" class="breadcrumb">
               <div class="bwp-breadcrumb">
-                <a href="./index.html">Anasayfa</a>
+                <a href="/index">Anasayfa</a>
                 <span class="delimiter"></span>
                 <span class="current">İletişim</span>
               </div>
