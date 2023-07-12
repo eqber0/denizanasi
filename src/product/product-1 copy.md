@@ -1,6 +1,6 @@
 ---
 name: Ürün 2
-rating: 5
+rating: "35"
 price: 280₺
 tag: En çok satılan
 image: /images/product-img-1-1.png
