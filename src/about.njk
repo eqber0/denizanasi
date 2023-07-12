@@ -313,7 +313,7 @@
                                 data-settings='{"background_background":"classic"}'
                               >
                                 <div class="subheader__img">
-                                  <img src="./images/about-cover.jpg" alt="" />
+                                  <img src="../images/about-cover.jpg" alt="" />
                                 </div>
                                 <div
                                   class="elementor-container elementor-column-gap-default"
@@ -734,327 +734,49 @@
                                                       data-columns1="3"
                                                       data-columns="3"
                                                     >
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-3976 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories category-collection category-health-beauty tag-beauty tag-ear-care tag-electric tag-fashion tag-jwerly tag-mimimal"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./solution-for-acne-and-sensitive-skin.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                loading="lazy"
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-127-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
+                                                      {%- for post in collections.post  | reverse -%}  
+                                                        <div
+                                                          class="post-grid post-3976 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories category-collection category-health-beauty tag-beauty tag-ear-care tag-electric tag-fashion tag-jwerly tag-mimimal"
+                                                        >
+                                                          <div class="post-inner">
+                                                            <div class="post-image">
+                                                              <a
+                                                                class="post-thumbnail"
+                                                                href="{{post.url}}"
+                                                                aria-hidden="true"
                                                               >
-                                                                <a
-                                                                  href="./solution-for-acne-and-sensitive-skin.html"
-                                                                  >Solution for
-                                                                  acne and
-                                                                  sensitive
-                                                                  skin</a
+                                                                <img
+                                                                  loading="lazy"
+                                                                  width="720"
+                                                                  height="484"
+                                                                  src="{{post.data.image}}"
+                                                                  class="fade-in lazyload wp-post-image"
+                                                                  alt="{{post.data.imageAlt}}"
+                                                                  decoding="async"
+                                                                />
+                                                              </a>
+                                                            </div>
+                                                            <div class="post-content">
+                                                              <div class="content-post">
+                                                                <h2 class="entry-title">
+                                                                  <a href="{{post.url}}">
+                                                                    {{post.data.title}}
+                                                                  </a>
+                                                                </h2>
+                                                                <div
+                                                                  class="btn-read-more"
                                                                 >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./solution-for-acne-and-sensitive-skin.html"
-                                                                  >Read More</a
-                                                                >
+                                                                  <a
+                                                                    class="read-more"
+                                                                    href="{{post.url}}"
+                                                                    >Devamını Oku</a
+                                                                  >
+                                                                </div>
                                                               </div>
                                                             </div>
                                                           </div>
                                                         </div>
-                                                      </div>
-                                                      <!-- #post-## -->
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-3974 post type-post status-publish format-image has-post-thumbnail hentry category-collection category-health-beauty tag-baby-needs tag-electric tag-fashion tag-jwerly tag-medical tag-mimimal tag-organic tag-simple tag-sport post_format-post-format-image"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./comprehensive-sun-protection.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-128-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
-                                                              >
-                                                                <a
-                                                                  href="./comprehensive-sun-protection.html"
-                                                                  >Comprehensive
-                                                                  sun
-                                                                  protection</a
-                                                                >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./comprehensive-sun-protection.html"
-                                                                  >Read More</a
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <!-- #post-## -->
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-3971 post type-post status-publish format-image has-post-thumbnail hentry category-health-beauty category-life-style tag-baby-needs tag-electric tag-fashion tag-jwerly tag-medical tag-mimimal tag-organic tag-sport post_format-post-format-image"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./skincare-routine.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-129-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
-                                                              >
-                                                                <a
-                                                                  href="./skincare-routine.html"
-                                                                  >Skincare
-                                                                  routine</a
-                                                                >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./skincare-routine.html"
-                                                                  >Read More</a
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <!-- #post-## -->
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-1604 post type-post status-publish format-standard has-post-thumbnail hentry category-beauty tag-electric tag-fashion tag-jwerly tag-medical tag-mimimal tag-organic tag-simple tag-sport"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./2023/01/09/quality-safe-bath-soap/quality-safe-bath-soap.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-121-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
-                                                              >
-                                                                <a
-                                                                  href="./2023/01/09/quality-safe-bath-soap/quality-safe-bath-soap.html"
-                                                                  >Quality, safe
-                                                                  bath soap</a
-                                                                >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./2023/01/09/quality-safe-bath-soap/quality-safe-bath-soap.html"
-                                                                  >Read More</a
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <!-- #post-## -->
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-1584 post type-post status-publish format-video has-post-thumbnail hentry category-accessories category-health-beauty tag-baby-needs tag-electric tag-fashion tag-jwerly tag-medical tag-mimimal tag-organic tag-sport post_format-post-format-video"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./post-format-video-blogs.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-130-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
-                                                              >
-                                                                <a
-                                                                  href="./post-format-video-blogs.html"
-                                                                  >Post format
-                                                                  video blogs</a
-                                                                >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./post-format-video-blogs.html"
-                                                                  >Read More</a
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <!-- #post-## -->
-                                                      <!-- Wrapper for slides -->
-                                                      <div
-                                                        class="post-grid post-1586 post type-post status-publish format-audio has-post-thumbnail hentry category-collection category-uncategorized tag-baber tag-baby-needs tag-cosmetic tag-electric tag-fashion tag-jwerly tag-medical tag-mimimal tag-sport post_format-post-format-audio"
-                                                      >
-                                                        <div class="post-inner">
-                                                          <div
-                                                            class="post-image"
-                                                          >
-                                                            <a
-                                                              class="post-thumbnail"
-                                                              href="./post-format-audio-blogs.html"
-                                                              aria-hidden="true"
-                                                            >
-                                                              <img
-                                                                width="720"
-                                                                height="484"
-                                                                src="../wp-content/uploads/2023/01/Rectangle-131-720x484.jpg"
-                                                                class="fade-in lazyload wp-post-image"
-                                                                alt=""
-                                                                decoding="async"
-                                                                loading="lazy"
-                                                              />
-                                                            </a>
-                                                          </div>
-                                                          <div
-                                                            class="post-content"
-                                                          >
-                                                            <div
-                                                              class="content-post"
-                                                            >
-                                                              <h2
-                                                                class="entry-title"
-                                                              >
-                                                                <a
-                                                                  href="./post-format-audio-blogs.html"
-                                                                  >Post format
-                                                                  audio blogs</a
-                                                                >
-                                                              </h2>
-                                                              <div
-                                                                class="btn-read-more"
-                                                              >
-                                                                <a
-                                                                  class="read-more"
-                                                                  href="./post-format-audio-blogs.html"
-                                                                  >Read More</a
-                                                                >
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <!-- #post-## -->
+                                                        {%- endfor -%}
                                                     </div>
                                                   </div>
                                                 </div>
